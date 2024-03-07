@@ -1,9 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+
+import QuickStart from './1_init/QuickStart'
 
 function App() {
   return (
-    <>Hello World</>
+    <>
+      Hello World
+      <QuickStart title="QuickStart"></QuickStart>
+    </>
   );
 }
 
