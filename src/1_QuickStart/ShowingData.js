@@ -4,7 +4,7 @@ import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied
 import { useState } from 'react';
 
 
-const QuickStart = (props) => {
+const ShowingData = (props) => {
     // Row Data: The data to be displayed.
     const [rowData, setRowData] = useState([
       { make: "Tesla", model: "Model Y", price: 64950, electric: true },
@@ -14,6 +14,7 @@ const QuickStart = (props) => {
     
     // Column Definitions: Defines the columns to be displayed.
     const [colDefs, setColDefs] = useState([
+      { headerName: "my_column", valueGetter: params => params.node.rowIndex + 1 }, // valueGetter: A Value Getter is a function callback that returns the cell value.
       { field: "make" },
       { field: "model" },
       { field: "price" },
@@ -37,4 +38,4 @@ const QuickStart = (props) => {
       )
   }
 
-  export default QuickStart;
+  export default ShowingData;

@@ -1,11 +1,11 @@
 
-import QuickStart from './1_init/QuickStart'
+import ShowingData from './1_QuickStart/ShowingData'
 
 function App() {
   return (
     <>
       Hello World
-      <QuickStart title="QuickStart"></QuickStart>
+      <ShowingData title="ShowingData"></ShowingData>
     </>
   );
 }
