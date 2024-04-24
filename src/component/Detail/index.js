@@ -1,12 +1,12 @@
 import Navbar from "../Common/Navbar";
 
-const Main = () => {
+const Detail = () => {
     return (
         <>
             <Navbar />
-            <div>Main</div>
+            <div>Detail</div>
         </>
     )
 };
 
-export default Main;
+export default Detail;
