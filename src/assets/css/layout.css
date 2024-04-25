@@ -1,0 +1,44 @@
+/* layout */
+[class].container {
+  padding-top: 75px;
+  max-width: 100% !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-custom {
+  padding-top: 65px;
+  max-width: 100% !important;
+}
+.customCard {
+  border-radius: 0 !important;
+}
+
+@media (min-width: 1600px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1440px;
+  }
+}
+
+/*default*/
+.table-container > [class^="MuiPaper"] button {
+  padding: 0 15px !important;
+  border: 1px solid #bec9d4 !important;
+  border-bottom: none !important;
+  background-color: #f5f7fa !important;
+  font-weight: 700;
+  font-size: 13px;
+}
+.table-container > [class^="MuiPaper"] button:not(*:first-child) {
+  border-left: none !important;
+}
+/* selected */
+.table-container > [class^="MuiPaper"] button[class*="-selected"] {
+  color: #4d34b1 !important;
+  font-size: 13px;
+  background: white !important;
+}
