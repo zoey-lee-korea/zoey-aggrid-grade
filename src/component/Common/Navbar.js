@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Nav } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 
-import "../../assets/css/navbar.css";
+import "./css/navbar.css";
 import favicon from "../../assets/images/favicon.png";
 
 export default function NavigationBar(props) {
@@ -43,10 +43,12 @@ export default function NavigationBar(props) {
           height="30"
           className="d-inline-block align-top"
           alt="zoey"
+          style={{ paddingRight: "10px" }}
         />
+        Zoey의 프로젝트
       </Navbar.Brand>
 
-      <div className="header-sub-title">ag-grid 연습</div>
+      <div className="header-sub-title">부제</div>
 
       <Navbar.Collapse
         id="responsive-navbar-nav"
