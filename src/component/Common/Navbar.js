@@ -11,7 +11,7 @@ export default function NavigationBar(props) {
   // const prjCode = props.prjCode;
   // const [prj_name, setPrjName] = useState("");
 
-  const navList = ["메인", "상세", "zoey"];
+  const navList = ["메인", "상세", "Everything", "Zoey"];
 
   return (
     <Navbar
@@ -62,7 +62,8 @@ export default function NavigationBar(props) {
                 const NAVURL = {
                   메인: "main",
                   상세: "detail",
-                  zoey: "zoey",
+                  Everything: "everything",
+                  Zoey: "zoey",
                 };
 
                 return (
