@@ -13,6 +13,12 @@ export default function NavigationBar(props) {
 
   const navList = ["메인", "상세", "Everything", "Zoey"];
 
+  const [selectedMenu, setSelectedMenu] = useState(props.selected_menu);
+
+  useEffect(() => {
+    setSelectedMenu(props.selected_menu);
+  }, [props.selected_menu]);
+
   return (
     <Navbar
       fixed="top"
@@ -70,7 +76,17 @@ export default function NavigationBar(props) {
                   <Nav.Link
                     key={index}
                     href={`/${NAVURL[item]}`}
-                    className={`custom-tab`}
+                    className={`custom-tab ${
+                      selectedMenu === NAVURL[item] ? "active" : ""
+                    }`}
+                    onClick={() => {
+                      // 모든 메뉴 항목에서 'active' 클래스 제거
+                      document
+                        .querySelectorAll(".custom-tab")
+                        .forEach((tab) => {
+                          tab.classList.remove("active");
+                        });
+                    }}
                   >
                     {item}
                   </Nav.Link>
