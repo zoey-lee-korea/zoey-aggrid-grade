@@ -3,8 +3,10 @@ import Navbar from "../Common/Navbar";
 const Detail = () => {
   return (
     <>
-      <Navbar />
-      <div>Detail</div>
+      <Navbar selected_menu="detail" />
+      <div className="container">
+        <div>Detail</div>
+      </div>
     </>
   );
 };

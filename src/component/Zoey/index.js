@@ -5,9 +5,11 @@ import GlobalHelloWorld from "./LocalizationProvider/GlobalHelloWorld";
 const Zoey = () => {
   return (
     <>
-      <Navbar />
-      <div>Zoey</div>
-      <GlobalHelloWorld />
+      <Navbar selected_menu="zoey" />
+      <div className="container">
+        <div>Zoey</div>
+        <GlobalHelloWorld />
+      </div>
     </>
   );
 };
