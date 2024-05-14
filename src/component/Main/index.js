@@ -7,13 +7,10 @@ import Aggird from "./Aggird";
 
 const Main = () => {
   return (
-    <>
-      <Navbar selected_menu="main" />
-      <div className="container">
-        <div>Main</div>
-        <Aggird />
-      </div>
-    </>
+    <div className="container">
+      <div>Main</div>
+      <Aggird />
+    </div>
   );
 };
 
