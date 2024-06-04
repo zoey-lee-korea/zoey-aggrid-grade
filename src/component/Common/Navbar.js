@@ -36,21 +36,13 @@ export default function NavigationBar(props) {
         // href={`/erpdash/solution_detail/${prjCode}`} // OLD
         href={`/main`}
         style={{
-          color: "#4D34B1",
+          color: "#AE8B79",
           fontWeight: "700",
           marginLeft: "40px",
           padding: "12px 0",
         }}
       >
         {/* {prj_name} // OLD */}
-        <Image
-          src={favicon} // 이미지 경로
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-          alt="zoey"
-          style={{ paddingRight: "10px" }}
-        />
         Zoey의 프로젝트
       </Navbar.Brand>
 
@@ -96,6 +88,16 @@ export default function NavigationBar(props) {
           ) : null
         }
       </Navbar.Collapse>
+      <a href="https://github.com/zoey-lee-korea/zoey-aggrid-grade">
+        <Image
+          src={favicon} // 이미지 경로
+          width="50"
+          height="30"
+          className="d-inline-block align-top"
+          alt="zoey"
+          style={{ paddingRight: "20px" }}
+        />
+      </a>
     </Navbar>
   );
 }

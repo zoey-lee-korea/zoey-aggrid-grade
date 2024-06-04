@@ -38,7 +38,7 @@
 }
 /* selected */
 .table-container > [class^="MuiPaper"] button[class*="-selected"] {
-  color: #4d34b1 !important;
+  color: #ae8b79 !important;
   font-size: 13px;
   background: white !important;
 }
